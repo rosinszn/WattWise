@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F5F9">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0F172A"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/buttonBackHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="← Back"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:backgroundTint="#334155" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Saved Bills"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/buttonHomeHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:backgroundTint="#2563EB" />
+
+    </LinearLayout>
+
+    <!-- MAIN CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Electricity Records"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap View Details to update or delete a bill record."
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- TABLE CARD -->
+        <LinearLayout
+            android:id="@+id/tableCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <!-- TABLE HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#DBEAFE"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Month"
+                    android:textColor="#1E3A8A"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Final Cost"
+                    android:textColor="#1E3A8A"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Action"
+                    android:textColor="#1E3A8A"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listViewBills"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:divider="#E2E8F0"
+                android:dividerHeight="1dp"
+                android:cacheColorHint="#00000000" />
+
+        </LinearLayout>
+
+        <!-- EMPTY MESSAGE -->
+        <TextView
+            android:id="@+id/textEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No saved bills yet.\nGo back to home and save your first bill."
+            android:textSize="16sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

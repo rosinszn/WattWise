@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#0F172A"
+            android:padding="14dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/buttonBackAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="← Back"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#334155" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="About"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/buttonHomeAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="Home"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2563EB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About WattWise"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                android:background="#DBEAFE"
+                android:padding="4dp"
+                android:contentDescription="Student profile picture" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:padding="18dp"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student Information"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0F172A"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textStyle="bold"
+                    android:textColor="#334155" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lenysha Felinna Anak Francis"
+                    android:textColor="#475569"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student ID"
+                    android:textStyle="bold"
+                    android:textColor="#334155" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2025138235"
+                    android:textColor="#475569"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:textStyle="bold"
+                    android:textColor="#334155" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ICT602 Mobile Technology and Development"
+                    android:textColor="#475569"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:padding="18dp"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to Use"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0F172A"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Select the month.\n2. Enter electricity usage from 1 to 1000 kWh.\n3. Choose rebate percentage from 0% to 5%.\n4. Tap Calculate Bill.\n5. Tap Save Record.\n6. Tap View History to see saved records.\n7. Tap a record to edit or delete it."
+                    android:textColor="#475569"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Application Website"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0F172A"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/textGithubUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="https://github.com/rosinszn/WattWise"
+                    android:textColor="#2563EB"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="© 2026 Lenysha Felinna Anak Francis. All rights reserved."
+                    android:textColor="#64748B"
+                    android:textSize="14sp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
